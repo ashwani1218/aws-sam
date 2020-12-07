@@ -1,2 +1,3 @@
-# aws-sam
-Simple hello world sam application
+# AWS: Serverless Application Model(SAM)
+Simple sam application with basic integration with Api Gateway and Dynamo DB.
+
