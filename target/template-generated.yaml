@@ -7,7 +7,13 @@ Resources:
     Properties:
       Handler: app.lambda_handler
       Runtime: python3.6
-      CodeUri: s3://ashwani-sam/8aae5bf5cd4df3943731342141371d10
+      CodeUri: s3://ashwani-sam/e08466311ced2a4a15d3500f85cb6d96
       Description: Hello world lambda function
       MemorySize: 128
       Timeout: 3
+      Events:
+        HelloWorldSAMAPI:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: GET
